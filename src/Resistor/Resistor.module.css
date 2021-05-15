@@ -1,0 +1,17 @@
+.cell {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.resistor {
+    background-color: #1d1d1d;
+    display: block;
+    height: 80%;
+    width: 50%;
+    border-radius: 5px;
+}
+

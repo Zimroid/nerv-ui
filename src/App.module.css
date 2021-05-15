@@ -1,0 +1,47 @@
+.demoWrapper {
+    width: 110%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px) {
+    .demoWrapper {
+        width: 180%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .demoWrapper {
+        width: 250%;
+    }
+}
+
+.gridWrapper {
+    width: 100%;
+    margin: auto;
+
+}
+
+.diagonal {
+    transform: rotateZ(45deg) translate(-3%, 0);
+    width: 102%;
+    height: 102%;
+}
+
+.resistorWrapper {
+    transform: rotateZ(-45deg);
+    width: 100%;
+    height: 100%;
+    margin-top: 50%;
+    margin-left: 50%;
+}
+
+.resistorWrapper2 {
+    transform: rotateZ(-45deg);
+    width: 100%;
+    height: 100%;
+    margin-top: 75%;
+    margin-left: 75%;
+}

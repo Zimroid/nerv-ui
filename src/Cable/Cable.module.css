@@ -1,0 +1,10 @@
+.cell {
+    --width: 1;
+    --height: 1;
+
+    display: flex;
+    width: calc(var(--width) * 10%);
+    height: calc(var(--height) * 10%);
+    justify-content: center;
+    align-items: flex-start;
+}

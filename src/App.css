@@ -1,0 +1,19 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  display: flex;
+
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #ff8b1e;
+}

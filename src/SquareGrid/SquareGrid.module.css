@@ -1,0 +1,22 @@
+.gridContainer {
+    --nb-columns: 5;
+    --nb-rows: 5;
+
+    display: flex;
+    width: 100%;
+    position: relative;
+}
+
+.gridContainer::before {
+    content: '';
+    display: block;
+    width: 0;
+    padding-top: calc(var(--nb-rows) / var(--nb-columns) * 100%);
+}
+
+.grid {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(var(--nb-columns), 1fr);
+    grid-template-rows: repeat(var(--nb-rows), 1fr);
+}
