@@ -8,7 +8,9 @@
 }
 
 .resistor {
-    background-color: #1d1d1d;
+    --color: red;
+
+    background-color: var(--color);
     display: block;
     height: 80%;
     width: 50%;

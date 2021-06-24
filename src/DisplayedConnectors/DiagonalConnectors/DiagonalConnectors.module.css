@@ -1,0 +1,13 @@
+.diagonal {
+    transform: rotateZ(45deg) translate(-3%, 0);
+    width: 102%;
+    height: 102%;
+}
+
+.resistorWrapper {
+    transform: rotateZ(-45deg);
+    width: 100%;
+    height: 100%;
+    margin-top: 50%;
+    margin-left: 50%;
+}
