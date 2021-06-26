@@ -36,7 +36,7 @@ export default function OutputCables({ nbCables, cableColor = 'red', maximumRigh
       const yRestistor = 11 + i;
       if (xRestistor < maximumRight && yRestistor < maximumBottom) {
         cables.push(
-          <SquareCell x={xRestistor} y={yRestistor}>
+          <SquareCell x={xRestistor} y={yRestistor} key={`outputCable${i}Resistor`}>
             <div className={styles.outputResistorWrapper}>
               <Resistor color={cableColor}></Resistor>
             </div>
@@ -59,7 +59,7 @@ export default function OutputCables({ nbCables, cableColor = 'red', maximumRigh
       }
     }
     cables.push(
-      <SquareCell x={0} y={0}>
+      <SquareCell x={0} y={0} key={`outputCable${i}`}>
         <Cable points={coordonnes} color={cableColor}></Cable>
       </SquareCell>
     )

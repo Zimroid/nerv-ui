@@ -25,7 +25,7 @@ export default function ConnectCables({ nbCables, cableColor = 'red' }: Props) {
       ];
     }
     cables.push(
-      <SquareCell x={0} y={0}>
+      <SquareCell x={0} y={0} key={`connectCable${i}`}>
         <Cable points={coordonnes} color={cableColor}></Cable>
       </SquareCell>
     )

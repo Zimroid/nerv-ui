@@ -24,7 +24,7 @@ export default function HorizontalConnectors({ values, connectorsColor = 'red', 
       x = x - (i + 2);
       y = y + i;
     }
-    return <SquareCell x={x} y={y}>
+    return <SquareCell x={x} y={y} key={`HorizontalConnectors${i}`}>
       <Connector text={`00${id}`} id={`${id}`} disabled={true} checked={value} connectorColor={connectorsColor} textColor={textColor} errorTextColor={errorTextColor}></Connector>
     </SquareCell>
   });

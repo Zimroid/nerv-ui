@@ -34,12 +34,12 @@ export default function DiagonalConnectors({ values, connectorsColor = 'red', te
     }
 
     const result = [
-      <SquareCell x={x} y={y}>
+      <SquareCell x={x} y={y} key={`diagonalConnector${i}`}>
         <div className={styles.diagonal}>
           <Connector text={`00${id}`} id={`${id}`} disabled={true} checked={value} connectorColor={connectorsColor} textColor={textColor} errorTextColor={errorTextColor}></Connector>
         </div>
       </SquareCell>,
-      <SquareCell x={x + diffSecondResistor} y={y + diffSecondResistor}>
+      <SquareCell x={x + diffSecondResistor} y={y + diffSecondResistor} key={`diagonalConnector${i}Resistor1`}>
         <div className={styles.resistorWrapper}>
           <Resistor color={connectorsColor}></Resistor>
         </div>
@@ -47,7 +47,7 @@ export default function DiagonalConnectors({ values, connectorsColor = 'red', te
     ];
 
     if (x + diffFirstResistor >= 0) {
-      result.push(<SquareCell x={x + diffFirstResistor} y={y + diffFirstResistor}>
+      result.push(<SquareCell x={x + diffFirstResistor} y={y + diffFirstResistor} key={`diagonalConnector${i}Resistor2`}>
         <div className={styles.resistorWrapper}>
           <Resistor color={connectorsColor}></Resistor>
         </div>
