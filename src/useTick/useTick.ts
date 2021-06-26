@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 
-export default function useTick(func, time) {
-    const savedFunction = useRef();
+export default function useTick(func: () => void, time: number) {
+    const savedFunction = useRef(() => {});
     useEffect(() => {
       savedFunction.current = func;
     })

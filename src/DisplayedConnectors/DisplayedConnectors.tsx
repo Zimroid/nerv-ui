@@ -1,11 +1,16 @@
 import { useState } from "react";
-import Connector from "../Connector/Connector";
-import SquareCell from "../SquareCell/SquareCell";
 import useTick from "../useTick/useTick";
 import DiagonalConnectors from "./DiagonalConnectors/DiagonalConnectors";
 import HorizontalConnectors from "./HorizontalConnectors/HorizontalConnectors";
 
-export default function DisplayedConnectors({ nbConnectors, connectorsColor = 'red', textColor = 'white', errorTextColor = 'black' }: { nbConnectors: number, connectorsColor?: string, textColor?: string, errorTextColor?: string }) {
+export interface Props {
+  nbConnectors: number,
+  connectorsColor?: string,
+  textColor?: string,
+  errorTextColor?: string
+}
+
+export default function DisplayedConnectors({ nbConnectors, connectorsColor = 'red', textColor = 'white', errorTextColor = 'black' }: Props) {
     let diagonalConnectorsInitialValues: boolean[] = [];
     for (let i = 0; i < nbConnectors; i++) {
       diagonalConnectorsInitialValues.push(true);

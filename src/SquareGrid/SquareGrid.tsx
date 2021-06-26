@@ -1,5 +1,10 @@
-import { Props } from './Squaregrid-interface';
 import styles from './SquareGrid.module.css';
+
+export interface Props {
+    nbColumns: number;
+    nbRows: number;
+    children: React.ReactNode;
+}
 
 export default function SquareGrid({nbColumns, nbRows, children}: Props) {
     // TODO watch parameter to update grid ?

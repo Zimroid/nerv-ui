@@ -1,10 +1,17 @@
 import Cable from "../../Cable/Cable";
-import { CablePoint } from "../../Cable/Cable-interface";
+import { CablePoint } from "../../Cable/types";
 import Resistor from "../../Resistor/Resistor";
 import SquareCell from "../../SquareCell/SquareCell";
 import styles from './OutputCables.module.css';
 
-export default function OutputCables({ nbCables, cableColor = 'red', maximumRight, maximumBottom }: { nbCables: number, cableColor?: string, maximumRight: number, maximumBottom: number }) {
+export interface Props {
+  nbCables: number,
+  cableColor?: string,
+  maximumRight: number,
+  maximumBottom: number
+}
+
+export default function OutputCables({ nbCables, cableColor = 'red', maximumRight, maximumBottom }: Props) {
   
   const pushCoordonneesIfPossible = (coord: CablePoint[], newPoint: CablePoint) => {
     const res = [...coord];

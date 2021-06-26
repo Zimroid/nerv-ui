@@ -2,7 +2,14 @@ import { useEffect, useState } from "react";
 import Connector from "../../Connector/Connector";
 import SquareCell from "../../SquareCell/SquareCell";
 
-export default function HorizontalConnectors({ values, connectorsColor = 'red', textColor = 'white', errorTextColor = 'black' }: { values: boolean[], connectorsColor?: string, textColor?: string, errorTextColor?: string }) {
+export interface Props {
+  values: boolean[],
+  connectorsColor?: string,
+  textColor?: string,
+  errorTextColor?: string
+}
+
+export default function HorizontalConnectors({ values, connectorsColor = 'red', textColor = 'white', errorTextColor = 'black' }: Props) {
   
   const [connectorsValues, setConnectorsValues] = useState(values);
   

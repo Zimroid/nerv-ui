@@ -1,7 +1,12 @@
 import Cable from "../../Cable/Cable";
 import SquareCell from "../../SquareCell/SquareCell";
 
-export default function InputCables({ nbCables, cableColor = 'red' }: { nbCables: number, cableColor?: string }) {
+export interface Props {
+  nbCables: number,
+  cableColor?: string
+}
+
+export default function InputCables({ nbCables, cableColor = 'red' }: Props) {
 
   const cables = [];
   for (let i = 0; i < nbCables; i++) {

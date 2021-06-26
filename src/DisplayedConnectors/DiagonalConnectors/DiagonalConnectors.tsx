@@ -4,7 +4,14 @@ import Resistor from "../../Resistor/Resistor";
 import SquareCell from "../../SquareCell/SquareCell";
 import styles from './DiagonalConnectors.module.css';
 
-export default function DiagonalConnectors({ values, connectorsColor = 'red', textColor = 'white', errorTextColor = 'black' }: { values: boolean[], connectorsColor?: string, textColor?: string, errorTextColor?: string }) {
+export interface Props {
+  values: boolean[],
+  connectorsColor?: string,
+  textColor?: string,
+  errorTextColor?: string
+}
+
+export default function DiagonalConnectors({ values, connectorsColor = 'red', textColor = 'white', errorTextColor = 'black' }: Props) {
   
   const [connectorsValues, setConnectorsValues] = useState(values);
   

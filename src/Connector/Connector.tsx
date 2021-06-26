@@ -1,6 +1,15 @@
 import { useEffect, useState } from 'react';
-import Props from './Connector-interface';
 import styles from './Connector.module.css';
+
+export interface Props {
+    text: string;
+    id: string;
+    disabled: boolean;
+    checked: boolean;
+    connectorColor?: string;
+    textColor?: string;
+    errorTextColor?: string;
+}
 
 export default function Connector({text, id, disabled, checked, connectorColor = 'red', textColor = 'white', errorTextColor = 'black'}: Props) {
     const [val, setVal] = useState(checked);

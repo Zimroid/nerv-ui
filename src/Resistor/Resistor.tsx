@@ -1,6 +1,10 @@
 import styles from './Resistor.module.css';
 
-export default function Resistor({color = 'red'}: {color?: string}) {
+export interface Props {
+    color?: string
+}
+
+export default function Resistor({color = 'red'}: Props) {
     // TODO replace the cast
     return (
         <div className={styles.cell}>

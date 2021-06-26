@@ -1,5 +1,10 @@
 import styles from './Cable.module.css';
-import { Props } from './Cable-interface';
+import { CablePoint } from './types';
+
+export interface Props {
+    points: CablePoint[];
+    color?: string;
+}
 
 export default function Cable({points, color = '#1d1d1d'}: Props) {
     let width = 0;
