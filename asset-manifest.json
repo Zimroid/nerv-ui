@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d7e7bea.chunk.css",
-    "main.js": "/static/js/main.558b133b.chunk.js",
-    "main.js.map": "/static/js/main.558b133b.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.7bb406ab.js",
-    "runtime-main.js.map": "/static/js/runtime-main.7bb406ab.js.map",
-    "static/js/2.c25eee57.chunk.js": "/static/js/2.c25eee57.chunk.js",
-    "static/js/2.c25eee57.chunk.js.map": "/static/js/2.c25eee57.chunk.js.map",
-    "static/js/3.9c297897.chunk.js": "/static/js/3.9c297897.chunk.js",
-    "static/js/3.9c297897.chunk.js.map": "/static/js/3.9c297897.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.9d7e7bea.chunk.css.map": "/static/css/main.9d7e7bea.chunk.css.map",
-    "static/js/2.c25eee57.chunk.js.LICENSE.txt": "/static/js/2.c25eee57.chunk.js.LICENSE.txt"
+    "main.css": "/nerv-ui/static/css/main.9d7e7bea.chunk.css",
+    "main.js": "/nerv-ui/static/js/main.558b133b.chunk.js",
+    "main.js.map": "/nerv-ui/static/js/main.558b133b.chunk.js.map",
+    "runtime-main.js": "/nerv-ui/static/js/runtime-main.6b34d5d8.js",
+    "runtime-main.js.map": "/nerv-ui/static/js/runtime-main.6b34d5d8.js.map",
+    "static/js/2.c25eee57.chunk.js": "/nerv-ui/static/js/2.c25eee57.chunk.js",
+    "static/js/2.c25eee57.chunk.js.map": "/nerv-ui/static/js/2.c25eee57.chunk.js.map",
+    "static/js/3.9c297897.chunk.js": "/nerv-ui/static/js/3.9c297897.chunk.js",
+    "static/js/3.9c297897.chunk.js.map": "/nerv-ui/static/js/3.9c297897.chunk.js.map",
+    "index.html": "/nerv-ui/index.html",
+    "static/css/main.9d7e7bea.chunk.css.map": "/nerv-ui/static/css/main.9d7e7bea.chunk.css.map",
+    "static/js/2.c25eee57.chunk.js.LICENSE.txt": "/nerv-ui/static/js/2.c25eee57.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7bb406ab.js",
+    "static/js/runtime-main.6b34d5d8.js",
     "static/js/2.c25eee57.chunk.js",
     "static/css/main.9d7e7bea.chunk.css",
     "static/js/main.558b133b.chunk.js"
