@@ -9,7 +9,7 @@ export default function useTick(func: () => void, time: number) {
     useEffect(() => {
       const interval = setInterval(() => { savedFunction.current(); }, time);
       return () => clearInterval(interval);
-    }, []);
+    }, [time]);
   
     return null;
   }

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef } from 'react';
 import styles from './Connector.module.css';
 
 export interface Props {
@@ -12,25 +12,25 @@ export interface Props {
 }
 
 export default function Connector({text, id, disabled, checked, connectorColor = 'red', textColor = 'white', errorTextColor = 'black'}: Props) {
-    const [val, setVal] = useState(checked);
-    const [inited, setInited] = useState(false);
+    const val = useRef(checked);
+    const inited = useRef(false);
     
     const handleInputChange = () => {
-        setInited(true);
-        setVal(!val);
+        inited.current = true;
+        val.current = !val.current;
     }
 
     useEffect(() => {
-        setVal(checked);
-        if (val !== checked) {
-            setInited(true);
+        val.current = checked;
+        if (val.current !== checked) {
+            inited.current = true;
         }
     }, [checked]);
 
     // TODO replace the cast
     return (
         <div className={`${styles.cell} ${inited ? styles.inited : ''}`}>
-            <input type="checkbox" id={id} className={styles.connector} checked={val} onChange={handleInputChange} disabled={disabled}></input>
+            <input type="checkbox" id={id} className={styles.connector} checked={val.current} onChange={handleInputChange} disabled={disabled}></input>
             <label htmlFor={id}>
                 <div className={styles.connectorDisplay} style={{'--connectorColor': connectorColor} as React.CSSProperties}>
                     <div className={styles.connectorDisplayLeft} style={{'--connectorColor': connectorColor} as React.CSSProperties}></div>
