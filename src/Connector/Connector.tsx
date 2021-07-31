@@ -35,7 +35,7 @@ export default function Connector({text, id, disabled, checked, connectorColor =
                 svg.beginElement();
             }
         }
-    }, [checked]);
+    }, [checked, id]);
 
     // TODO replace the cast
     return (
