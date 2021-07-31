@@ -228,13 +228,3 @@
     height: 100%;
     width: 100%;
 }
-
-.cable svg path {
-    d: path('M 49 50 L 90 50 C 105 50 105 50 120 50 L 170 50 M 751 50 L 710 50 C 695 50 695 50 680 50 L 630 50');
-    transition: d 0.2s;
-    transition-delay: 0.5s;
-}
-
-.connector:not(:checked) + label .cable svg path {
-    d: path('M 49 50 L 70 50 C 85 -20 85 120 100 50 L 170 50 M 751 50 L 730 50 C 715 -20 715 120 700 50 L 630 50');
-}
