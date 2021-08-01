@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/nerv-ui/static/css/main.4da91040.chunk.css",
+    "main.css": "/nerv-ui/static/css/main.2433c26e.chunk.css",
     "main.js": "/nerv-ui/static/js/main.a3f05e72.chunk.js",
     "main.js.map": "/nerv-ui/static/js/main.a3f05e72.chunk.js.map",
     "runtime-main.js": "/nerv-ui/static/js/runtime-main.6b34d5d8.js",
@@ -10,13 +10,13 @@
     "static/js/3.9c297897.chunk.js": "/nerv-ui/static/js/3.9c297897.chunk.js",
     "static/js/3.9c297897.chunk.js.map": "/nerv-ui/static/js/3.9c297897.chunk.js.map",
     "index.html": "/nerv-ui/index.html",
-    "static/css/main.4da91040.chunk.css.map": "/nerv-ui/static/css/main.4da91040.chunk.css.map",
+    "static/css/main.2433c26e.chunk.css.map": "/nerv-ui/static/css/main.2433c26e.chunk.css.map",
     "static/js/2.c25eee57.chunk.js.LICENSE.txt": "/nerv-ui/static/js/2.c25eee57.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.6b34d5d8.js",
     "static/js/2.c25eee57.chunk.js",
-    "static/css/main.4da91040.chunk.css",
+    "static/css/main.2433c26e.chunk.css",
     "static/js/main.a3f05e72.chunk.js"
   ]
 }
