@@ -2,6 +2,8 @@
 
 Just to start learning how to use React, non-interactive page based on a sci-fi looking UI from Evangelion.
 
+[Demo](https://zimroid.github.io/nerv-ui)
+
 ## How it's made ?
 
 It's a CSS grid tweaked to only display square cells.
